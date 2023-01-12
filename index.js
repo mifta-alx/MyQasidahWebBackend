@@ -19,9 +19,9 @@ const db = mongoose.connection;
 db.on('err', (err) => console.log(err))
 db.once('open', ()=> console.log('Database Connected...'))
     
-// const port = 3001;
-// app.listen(port, () => {
-//     console.log(`Example app listening on port ${port}`);
-// });
+const port = 3001;
+app.listen(process.env.PORT || port, () => {
+    console.log(`Example app listening on port ${port}`);
+});
 
 app.use(QasidahRoutes);
