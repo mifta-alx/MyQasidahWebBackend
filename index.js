@@ -26,4 +26,4 @@ app.listen(process.env.PORT || port, () => {
 
 app.use(QasidahRoutes);
 
-export default app
+// export default app
