@@ -3,7 +3,6 @@ const Qasidah = mongoose.Schema({
     title: {
         type: String,
         required : true,
-        unique: true
     },
     title_arabic: {
         type: String,
