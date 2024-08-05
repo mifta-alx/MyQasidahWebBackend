@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+const mongoose = require('mongoose')
 const Qasidah = mongoose.Schema({
     title: {
         type: String,
@@ -49,4 +49,4 @@ const Qasidah = mongoose.Schema({
         }
     ],
 },{timestamps : true})
-export default mongoose.model('Qasidahs', Qasidah);
+module.exports = mongoose.model('Qasidahs', Qasidah);
